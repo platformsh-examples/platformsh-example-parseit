@@ -1,0 +1,8 @@
+name: parse
+type: nodejs:4.2
+web:
+  commands:
+    start: "npm start"
+relationships:
+  first_db: "db:mongodb"
+disk: 512

@@ -1,0 +1,30 @@
+{
+  "name": "ParseIt",
+  "version": "1.0.0",
+  "description": "a ParseIt Platform.sh example",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:platformsh/platformsh-example-parseit.git"
+  },
+  "author": "Ori Pekelman",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~4.2.x",
+    "parse": "~1.6.12",
+    "parse-server": "^2.0.0",
+    "platformsh": "^0.0.1"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.5"
+  }
+}
