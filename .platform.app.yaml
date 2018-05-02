@@ -1,0 +1,15 @@
+name: parse
+type: nodejs:8.9
+web:
+  commands:
+    start: "parse-server --appId $APP_ID --masterKey $MASTER_KEY --databaseURI mongodb://main:main@mongodb.internal/main"
+relationships:
+  mongodb: "mongodb:mongodb"
+disk: 512
+dependencies:
+  nodejs:
+    parse-server: "*"
+mounts:
+    'logs':
+        source: local
+        source_path: 'logs'
