@@ -1,15 +1,31 @@
-#Example Parse.com Configuration for Platform.Sh
+# Minimalistic Example Parse.com Configuration for Platform.sh
 
-Parse are retiring their service .. and people will need to find alternate methods to host their code (while probably migrating to some other service).
+Parse  retired their service .. and people will need to find alternate methods to host their code (while probably migrating to some other 
+service).
 
-Anyway,  Platform.sh has everything that is needed to run a Parse server (unlike  other providers you don't need an external service for MongoDB).
+Platform.sh has everything that is needed to run a Parse server (unlike  other providers you don't need an external service for MongoDB).
 
-Currently mongodb is hardcoded in start command, but it's fine. Not gonna change.
+## Starting a new project
 
-Configuration:
+To start a new project based on this template, follow these 3 simple steps:
 
-`platform variable:set APP_ID this_is_my_app_id`
-`platform variable:set MASTER_KEY this_is_my_master_key`
+1. Clone this repository locally.  You may optionally remove the `origin` remote or remove the `.git` directory and re-init the project if you want a clean history.
+ 
+2. Create a new project through the Platform.sh user interface and select "Import an existing project" when prompted.
+
+3. Run the provided Git commands to add a Platform.sh remote and push the code to the Platform.sh repository.
+
+That's it!  You now have a working "hello world" level project you can build on.
+
+## Using as a reference
+
+You can also use this repository as a reference for your own projects, and borrow whatever code is needed. The most important parts are the `.platform.app.yaml` file and the `.platform` directory.
+
+## Configuration
+Configuration (assuming you have the platform.sh CLI installed):
+
+`platform variable:set env:APP_ID this_is_my_app_id`
+`platform variable:set env:MASTER_KEY this_is_my_master_key`
 
 To test: 
 
